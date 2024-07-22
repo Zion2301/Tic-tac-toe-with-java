@@ -31,10 +31,10 @@ public class Main {
 
             char a = '-';
             if (player1) {
-                a = 'x';
+                a = 'X';
             }
             else {
-                a = 'o';
+                a = 'O';
             }
 
             int row = 0;
@@ -58,10 +58,10 @@ public class Main {
             }
             gameboard[row][column] = a;
 
-            if (playerWon(gameboard) == 'x'){
+            if (playerWon(gameboard) == 'X'){
                 System.out.println(firstplayer + " won");
                 gameOver = true;
-            } else if (playerWon(gameboard) == 'o') {
+            } else if (playerWon(gameboard) == 'O') {
                 System.out.println(secondplayer + " won");
                 gameOver = true;
             }
